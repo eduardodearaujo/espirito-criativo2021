@@ -1,0 +1,112 @@
+/* defaults */
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+/* text */
+
+.text-regular {
+    font-family: stratos, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.text-sbold {
+    font-family: stratos, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.text-white {
+    color: #EEE5E0;
+}
+
+.text-purple {
+    color: #6D47EF;
+}
+
+.text-purple-hover:hover {
+    color: #6D47EF;
+}
+
+.text-small {
+    font-size: 14pt;
+}
+
+.text-semibig {
+    font-size: 36pt;
+}
+
+/* bg */
+
+.bg-orange {
+    background-color: #E57E51;
+}
+
+.bg-purple {
+    background-color: #8899FF;
+}
+
+/* modifiers */
+
+.simple-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.inline-list > li {
+    display: inline;
+}
+
+.hidden {
+    display: none;
+}
+
+/* blocks */
+
+.wrapper {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-initial {
+    flex: initial;
+}
+
+.flex-auto {
+    flex: auto;
+}
+
+/* alignment */
+
+.align-right {
+    text-align: right;
+}
+
+.ml-small {
+    margin-left: 15px;
+}
+
+/* objects */
+
+.main-header {
+    padding: 60px 0 0 0;
+    background-image: url("../images/bg_preto.jpg")
+}
+
+.logo {
+    width: 130px;
+}
