@@ -1,0 +1,44 @@
+{
+  "header": {
+    "brand": {
+      "link": {
+        "href": "#",
+        "title": "marca do espírito criativo"
+      },
+      "image": {
+        "src": "/images/logo_ec_branco.svg",
+        "alt": "marca do espírito criativo"
+      }
+    },
+    "menu": {
+      "items": [
+        {
+          "name": "início",
+          "href": "#",
+          "title": "ir para início"
+        },
+        {
+          "name": "o espírito criativo",
+          "href": "#o-espirito-criativo",
+          "title": "conhecer o espírito criativo"
+        },
+        {
+          "name": "o que fazemos",
+          "href": "#o-que-fazemos",
+          "title": "saiba o que fazemos"
+        },
+        {
+          "name": "projetos",
+          "href": "#projetos",
+          "title": "confira nossos projetos",
+          "subItems": []
+        },
+        {
+          "name": "contato",
+          "href": "#contato",
+          "title": "fale com a gente"
+        }
+      ]
+    }
+  }
+}
