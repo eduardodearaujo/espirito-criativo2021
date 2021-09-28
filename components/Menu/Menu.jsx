@@ -8,8 +8,8 @@ import {
   MenuNavItem,
 } from "./Menu.style";
 
-const NavItem = ({ item }) => (
-  <MenuNavItem>
+const NavItem = ({ item, version }) => (
+  <MenuNavItem version={version}>
     <a href={item.href} title={item.title}>
       {item.name}
     </a>
@@ -18,7 +18,7 @@ const NavItem = ({ item }) => (
   </MenuNavItem>
 );
 
-export const Menu = () => {
+export const Menu = ({ version = 'dark' }) => {
   const { menu: menuContent, brand: brandContent } =
     useContent("shared.header");
 
@@ -36,7 +36,7 @@ export const Menu = () => {
       <MenuNavWrapper>
         <MenuNav>
           {menuContent.items.map((item, index) => (
-            <NavItem item={item} key={index} />
+            <NavItem version={version} item={item} key={index} />
           ))}
         </MenuNav>
       </MenuNavWrapper>

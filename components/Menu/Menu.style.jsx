@@ -36,6 +36,16 @@ export const MenuNavItem = styled("li", {
   "&:first-child": {
     marginLeft: "0",
   },
+  variants: {
+    version: {
+      light: {
+        color: "#6d47ef",
+      },
+      dark: {
+        color: "#eee5e0",
+      },
+    }
+  },
   a: {
     "&:hover": {
       color: "#6d47ef",
