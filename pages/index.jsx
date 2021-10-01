@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.css";
 import { Header } from "@components/Header";
 import { Menu } from "@components/Menu";
 import { SlideShow } from "@components/SlideShow";
+import { Footer } from "@components/Footer"
 
 function Home() {
   return (
@@ -18,6 +19,8 @@ function Home() {
         <Menu />
         <SlideShow />
       </Header>
+      
+      <Footer />
     </div>
   );
 }
