@@ -10,5 +10,79 @@
         "alt": "Uma mão que desenha e um ramo de folhas brotando a partir dela, simbolizando a criatividade para crescer"
       }
     }
-  ]
+  ],
+  "footer": {
+    "content": {
+      "title": "vamos tomar um café?",
+      "description": "O que vamos criar juntos hoje? Vamos adorar conhecer você e seus projetos. Escreva pra gente! :D",
+      "socialMedia": [
+        {
+          "href": "#linkedin",
+          "title": "LinkedIn",
+          "image": {
+            "width": "33",
+            "height": "33",
+            "src": "/images/icone_linkedin.svg",
+            "isHoveredSrc": "/images/icone_linkedin.svg",
+            "alt": "Acesse o nosso LinkedIn"
+          }
+        },
+        {
+          "href": "#instagram",
+          "title": "Instagram",
+          "image": {
+            "width": "33",
+            "height": "33",
+            "src": "/images/icone_instagram.svg",
+            "isHoveredSrc": "/images/icone_instagram.svg",
+            "alt": "Acesse o nosso Instagram"
+          }
+        },
+        {
+          "href": "#facebook",
+          "title": "Facebook",
+          "image": {
+            "width": "33",
+            "height": "33",
+            "src": "/images/icone_facebook.svg",
+            "isHoveredSrc": "/images/icone_facebook.svg",
+            "alt": "Acesse o nosso Facebook"
+          }
+        },
+        {
+          "href": "#youtube",
+          "title": "YouTube",
+          "image": {
+            "width": "33",
+            "height": "33",
+            "src": "/images/icone_youtube.svg",
+            "isHoveredSrc": "/images/icone_youtube.svg",
+            "alt": "Acesse o nosso YouTube"
+          }
+        }
+      ]
+    },
+    "contact": {
+      "textFields": [
+        {
+          "name": "name",
+          "value": "seu nome"
+        },
+        {
+          "name": "email",
+          "value": "seu e-mail"
+        },
+        {
+          "name": "phone",
+          "value": "seu telefone"
+        }
+      ],
+      "messageField": {
+        "value": "sua mensagem"
+      },
+      "submitButton": {
+        "value": "ENVIAR"
+      }
+    }
+  }
 }
