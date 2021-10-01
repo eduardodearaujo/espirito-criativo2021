@@ -1,6 +1,6 @@
 import { styled } from '@stitches/react'
 
-export const Footer = styled('div', {
+export const Footer = styled('footer', {
     backgroundColor: "#E5824E"
 })
 export const FooterWrapper = styled('div', {
