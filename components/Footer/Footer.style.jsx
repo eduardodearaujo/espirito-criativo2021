@@ -7,6 +7,7 @@ export const FooterWrapper = styled('div', {
     width: "100%",
     maxWidth: "118rem",
     display: "flex",
+    flexWrap: "wrap",
     position: "relative",
     margin: "0 auto",
     paddingTop: "140px",
@@ -116,7 +117,47 @@ export const FooterContactSubmitButton = styled('input', {
         cursor: "pointer"
     }
 })
-export const FooterSiteMap = styled('div', {})
-export const FooterSiteMapNavWrapper = styled('nav', {})
-export const FooterSiteMapNav = styled('ul', {})
-export const FooterSiteMapNavItem = styled('li')
+export const FooterSiteMap = styled('div', {
+    flex: "0 0 100%",
+    paddingTop: "38px",
+    marginTop: "207px",
+    borderTop: "1px solid #B73A18",
+    display: "flex"
+})
+export const FooterSiteMapBrand = styled('a', {})
+export const FooterSiteMapNavWrapper = styled('nav', {
+    marginLeft: "auto",
+    display: "flex",
+    paddingRight: "125px",
+    boxSizing: "border-box"
+})
+export const FooterSiteMapNav = styled('div', {
+    fontSize: "1.4rem",
+    fontFamily: "stratos, sans-serif",
+    fontWeight: "400",
+    fontStyle: "normal",
+    color: "#B73A18",
+    marginRight: "90px",
+    ul: {
+        display: "block",
+        listStyleType: "none",
+        margin: 0,
+        padding: 0
+    },
+    h2: {
+        fontSize: "1.4rem",
+        fontWeight: "400",
+        padding: 0,
+        margin: 0,
+        marginBottom: "13px"
+    },
+    "&:last-child": {
+        marginRight: 0
+    }
+})
+export const FooterSiteMapNavItem = styled('li', {
+    marginBottom: "-5px",
+    "&:last-child": {
+        marginBottom: 0
+    }
+})
