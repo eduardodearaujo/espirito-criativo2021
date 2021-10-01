@@ -12,7 +12,12 @@ import {
     FooterContact,
     FooterContactTextField,
     FooterContactMessageField,
-    FooterContactSubmitButton
+    FooterContactSubmitButton,
+    FooterSiteMap,
+    FooterSiteMapBrand,
+    FooterSiteMapNavWrapper,
+    FooterSiteMapNav,
+    FooterSiteMapNavItem
  } from './Footer.style'
 
 const SocialMediaItem = ({ item }) => {
@@ -65,11 +70,39 @@ const ContactForm = ({ item }) => {
     )
 }
 
+const SiteMapNavWrapper = ({ item }) => {
+    return (
+        <FooterSiteMapNavWrapper>
+            {item.map((menu, index) => (
+                <SiteMapNav item={menu} key={index} />
+            ))}
+        </FooterSiteMapNavWrapper>
+    )
+}
+
+const SiteMapNav = ({ item }) => {
+    return (
+        <FooterSiteMapNav>
+           <h2>{item.title}</h2>
+           <ul>
+               {item.items.map((menuItem, index) => (
+                   <FooterSiteMapNavItem key={index}>
+                       <a href={menuItem.href} title={menuItem.title}>
+                           {menuItem.name}
+                       </a>
+                   </FooterSiteMapNavItem>
+               ))}
+            </ul>
+        </FooterSiteMapNav>
+    )
+}
+
 export const Footer = () => {
     const {
         content,
-        contact
-    } = useContent('home.footer')
+        contact,
+        siteMap
+    } = useContent('shared.footer')
 
     return (
         <InnerFooter>
@@ -85,6 +118,22 @@ export const Footer = () => {
                 </FooterContent>
 
                 <ContactForm item={contact}/>
+
+                <FooterSiteMap>
+                    <FooterSiteMapBrand 
+                       href={siteMap.brand.link.href}
+                       title={siteMap.brand.link.title}
+                    >
+                        <Image 
+                           width={siteMap.brand.image.width}
+                           height={siteMap.brand.image.height}
+                           src={siteMap.brand.image.src}
+                           alt={siteMap.brand.image.alt}
+                        />
+                    </FooterSiteMapBrand>
+
+                    <SiteMapNavWrapper item={siteMap.menus} />
+                </FooterSiteMap>
             </FooterWrapper>
         </InnerFooter>
     )
