@@ -4,7 +4,7 @@ export const SlideShowWrapper = styled("section", {
   maxWidth: "192rem",
   position: "relative",
   width: "100%",
-  margin: "215px auto 0",
+  margin: "60px auto 0",
   display: "block",
 });
 
@@ -24,6 +24,7 @@ export const SlideShowNav = styled("nav", {
 });
 
 export const SlideShowNavButton = styled("button", {
+  cursor: "pointer",
   width: "28px",
   height: "49px",
   flex: "initial",
