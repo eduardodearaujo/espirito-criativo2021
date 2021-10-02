@@ -9,7 +9,8 @@ export const WhatWeDoWrapper = styled('div', {
     display: "flex",
     flexWrap: "wrap",
     position: "relative",
-    margin: "0 auto"
+    margin: "0 auto",
+    paddingBottom: "65px"
 })
 export const WhatWeDoContent = styled('div', {
     flex: "0 0 100%",
@@ -55,7 +56,7 @@ export const WhatWeDoExamplesItem = styled('li', {
     },
     textAlign: "center",
     color: "#EEE5E0",
-    padding: "40px",
+    padding: "40px 35px",
     h2: {
         fontSize: "1.6rem",
         fontFamily: "stratos, sans-serif",
