@@ -48,7 +48,7 @@ export const MenuNavItem = styled("li", {
   },
   a: {
     "&:hover": {
-      color: "#6d47ef",
+      color: "#E57E51",
     },
   },
 });

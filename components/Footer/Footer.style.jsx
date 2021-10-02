@@ -157,6 +157,9 @@ export const FooterSiteMapNav = styled('div', {
 })
 export const FooterSiteMapNavItem = styled('li', {
     marginBottom: "-5px",
+    "&:hover": {
+        color: "#692F8B"
+    },
     "&:last-child": {
         marginBottom: 0
     }
